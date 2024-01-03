@@ -1,46 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hacking...</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hacking...</title>
 
-    <link rel="stylesheet" href="https://linfindel.github.io/nadircss/nadir.css">
+  <link rel="stylesheet" href="https://linfindel.github.io/nadircss/nadir.css">
 
-    <style>
-        * {
-            color: green;
+  <style>
+    * {
+      color: green;
 
-            font-family: 'Courier New', Courier, monospace;
+      font-family: 'Courier New', Courier, monospace;
 
-            text-align: justify;
+      text-align: justify;
 
-            overflow: hidden;
+      overflow: hidden;
 
-            cursor: none;
-        }
-    </style>
+      cursor: none;
+    }
+  </style>
 
-    <script>
-        function getRandomLatinString(length) {
-            let result = '';
+  <script>
+    function getRandomLatinString(length) {
+      let result = '';
 
-            // Define the range of Unicode characters for Latin characters
-            const latinStart = 0x0020;
-            const latinEnd = 0x007E;
+      // Define the range of Unicode characters for Latin characters
+      const latinStart = 0x0020;
+      const latinEnd = 0x007E;
 
-            for (let i = 0; i < length; i++) {
-                const randomCodePoint = Math.floor(Math.random() * (latinEnd - latinStart + 1)) + latinStart;
-                result += String.fromCodePoint(randomCodePoint);
-            }
+      for (let i = 0; i < length; i++) {
+        const randomCodePoint = Math.floor(Math.random() * (latinEnd - latinStart + 1)) + latinStart;
+        result += String.fromCodePoint(randomCodePoint);
+      }
 
-            return result;
-        }
+      return result;
+    }
 
-        setInterval(() => {
-            document.body.innerText = getRandomLatinString(20000);
-        }, 0);
-    </script>
+    setInterval(() => {
+      document.body.innerText = getRandomLatinString(20000);
+    }, 0);
+  </script>
 </head>
 <body>
     
